@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Phan1</title>
+    <style>
+        body {
+            background-color: #40e4dc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 20px;
+        }
+        
+        #text p {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+        
+        .text1 li {
+            font-size: 16px;
+            list-style-type: none;
+            padding: 6px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .text1 li:hover {
+            background-color: yellow;
+            font-size: 18px;
+        }
+        
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+            font-size: 16px;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+        }
+        
+        th,
+        td {
+            padding: 10px 12px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #f0f0f0;
+        }
+        
+        b {
+            font-size: 18px;
+            display: block;
+            margin-top: 30px;
+        }
+        
+        input {
+            border: 1px solid #40e4dc;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
+        button {
+            border: 1px solid #40e4dc;
+            padding: 15px;
+            border-radius: 15px;
+        }
+        
+        .link {
+            text-align: center;
+        }
+        
+        .link a {
+            color: #333;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        .link a:hover {
+            color: #e91e63;
+        }
+        
+        .link a.active {
+            text-decoration: underline;
+            color: #e91e63;
+        }
+    </style>
+</head>
+
+<body>
+    <b>1. Trang giới thiệu bản thân.</b>
+    <div id="text">
+        <p>Họ và tên: Lê Tấn Kiệt</p>
+        <p>Ngày sinh: 15/11/2005</p>
+        <p>Quê quán: Ấp Thành Long, xã Thành Thới A, Mỏ Cày Nam, Bến Tre</p>
+        <p>Sinh viên trường Đại Học Công Nghiệp Thành Phố Hồ Chí Minh.</p>
+        <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/3/23/792631/Lee-Min-Ho-Quan-Vuon-06.jpg" alt="Ảnh đại diện" />
+    </div>
+
+    <b>2. Danh sách các môn yêu thích.</b>
+    <ul class="text1">
+        <li>Toán</li>
+        <li>Vật Lý</li>
+        <li>Hóa học</li>
+    </ul>
+
+    <b>3. Bảng thời khóa biểu.</b>
+    <table>
+        <thead>
+            <tr>
+                <th>Thứ 2</th>
+                <th>Thứ 3</th>
+                <th>Thứ 4</th>
+                <th>Thứ 5</th>
+                <th>Thứ 6</th>
+                <th>Thứ 7</th>
+                <th>Chủ nhật</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Toán</td>
+                <td>Vật lý</td>
+                <td>Hóa học</td>
+                <td>Sinh học</td>
+                <td>Lịch sử</td>
+                <td>Ngữ văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>Toán</td>
+                <td>Vật lý</td>
+                <td>Hóa học</td>
+                <td>Sinh học</td>
+                <td>Lịch sử</td>
+                <td>Ngữ văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>Toán</td>
+                <td>Vật lý</td>
+                <td>Hóa học</td>
+                <td>Sinh học</td>
+                <td>Lịch sử</td>
+                <td>Ngữ văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>Toán</td>
+                <td>Vật lý</td>
+                <td>Hóa học</td>
+                <td>Sinh học</td>
+                <td>Lịch sử</td>
+                <td>Ngữ văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+            <tr>
+                <td>Toán</td>
+                <td>Vật lý</td>
+                <td>Hóa học</td>
+                <td>Sinh học</td>
+                <td>Lịch sử</td>
+                <td>Ngữ văn</td>
+                <td>Tiếng Anh</td>
+            </tr>
+        </tbody>
+    </table>
+    <b>4. Form đăng ký thông tin.</b><br>
+    <form action="/action_page.php">
+        <label for="fname">Họ và tên: </label>
+        <input type="text0" id="fname" name="fname" value="Nhập họ và tên......"></input><br><br>
+        <label for="ename">Email: </label>
+        <input type="text2" id="ename" name="ename" value="Nhập emali...."><br><br>
+        <label for="pname">Số điện thoại: </label>
+        <input type="text3" id="pname" name="pname" value="Nhập số điện thoại......"><br><br>
+        <label for="age">Giới tính: </label>
+        <input type="text4" id="age" name="age" value="Nhập giới tính......"><br><br>
+        <button type="commit">Gửi</button>
+    </form><br>
+    <div class="link">
+        <a href="https://www.w3schools.com">Visit W3Schools.com!</a><br><br>
+        <a href="https://itviec.com/">ITViec</a>
+    </div>
+</body>
+
+</html>
