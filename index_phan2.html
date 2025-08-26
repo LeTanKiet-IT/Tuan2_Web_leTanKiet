@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phan2</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+        }
+        
+        img {
+            border-radius: 15px;
+            /* Bo góc */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            /* Đổ bóng */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        img:hover {
+            transform: scale(1.05);
+            /* Hover phóng nhẹ */
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+        }
+        
+        figcaption {
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        .gallery figure {
+            margin: 0;
+            text-align: center;
+        }
+        
+        .gallery img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 22px rgba(0, 0, 0, 0.35);
+        }
+        
+        .gallery figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #333;
+        }
+        
+        .video-container {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+        }
+        
+        .video-container iframe {
+            width: 100%;
+            height: 340px;
+        }
+        
+        .portfolio {
+            background: #fff;
+            margin: 30px auto;
+            padding: 20px;
+            max-width: 1000px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        
+        .portfolio h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            background: #fdfdfd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            padding-bottom: 10px;
+        }
+        
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        
+        .card h3 {
+            margin: 10px;
+            font-size: 18px;
+        }
+        
+        .card p {
+            margin: 0 10px 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <b>6.Hiển thị ảnh và mô tả</b>
+        <figure>
+            <img width="300" src="https://scr.vn/wp-content/uploads/2020/07/H%C3%ACnh-%E1%BA%A3nh-phong-c%E1%BA%A3nh-y%C3%AAn-b%C3%ACnh.jpg" alt="Ảnh phong cảnh">
+            <figcaption>Ảnh phong cảnh thật đẹp.</figcaption>
+        </figure>
+    </div>
+    <div>
+        <b>7. Thư viện ảnh</b>
+        <div class="gallery">
+            <figure>
+                <img src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/8/23/1084256/295497942_2922294937.jpg" alt="Phong cảnh 1">
+                <figcaption>Phong cảnh 1</figcaption>
+            </figure>
+            <figure>
+                <img src="https://khoinguonsangtao.vn/wp-content/uploads/2022/08/anh-que-huong-mien-tay-yen-binh.jpg" alt="Phong cảnh 2">
+                <figcaption>Phong cảnh 2</figcaption>
+            </figure>
+            <figure>
+                <img src="https://hanoispiritofplace.com/wp-content/uploads/2015/11/canh-dep-viet-nam-8.jpg" alt="Phong cảnh 3">
+                <figcaption>Phong cảnh 3</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="video-container">
+        <p>8.Video phim ảnh</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    </div>
+
+    <div class="audio-container">
+        <p>9.MPT nghe thư giản</p>
+        <audio controls>
+            <source src="good 4 u.ogg" type="audio/ogg">
+            <source src="good 4 u.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="portfolio">
+        <h2>10. Portfolio cá nhân</h2>
+        <div class="projects">
+            <div class="card">
+                <img width="200" src="https://sonqb.com/media/2024/01/giaythethao.jpg" alt="Dự án 1">
+                <h3>Dự án 1</h3>
+                <p>Website bán giày thể thao.</p>
+            </div>
+            <div class="card">
+                <img width="200" src="https://sonqb.com/media/2022/03/mau-website-ban-dien-thoai-giong-cellphones-chuyen-nghiep.jpg" alt="Dự án 2">
+                <h3>Dự án 2</h3>
+                <p>Website bán điện thoại.</p>
+            </div>
+            <div class="card">
+                <img width="200" src="https://mona.media/wp-content/uploads/2019/09/FireShot-Capture-692-Non-Son-http___mauweb.monamedia.net_nonson_-457x1024.jpg" alt="Dự án 3">
+                <h3>Dự án 3</h3>
+                <p>Website bán nón bảo hiểm.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

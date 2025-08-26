@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Phần 4: Dự án nhỏ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #ed7575;
+            text-align: center;
+            align-items: center;
+        }
+        
+        h2 {
+            margin-top: 40px;
+            color: #333;
+        }
+        
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .product-card {
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 220px;
+        }
+        
+        .product-card img {
+            max-width: 100%;
+            border-radius: 8px;
+            padding: 15px 0;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background: #3498db;
+            color: #fff;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        
+        .product-card button:hover {
+            background: #217dbb;
+        }
+        
+        .travel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 0 auto 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 500px;
+        }
+        
+        .travel img {
+            width: 200px;
+            border-radius: 8px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .travel-info {
+            text-align: center;
+        }
+        
+        .news {
+            background: #fff;
+            padding: 15px;
+            margin: 0 auto 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        .news img {
+            width: 50%;
+            border-radius: 8px;
+            transition: 0.3s;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .news img:hover {
+            transform: scale(1.05);
+        }
+        
+        .events li {
+            list-style: none;
+            margin: 8px 0;
+            padding: 10px;
+            border-radius: 6px;
+        }
+        
+        .event-today {
+            background: #f39c12;
+            color: #fff;
+        }
+        
+        .event-normal {
+            background: #ecf0f1;
+        }
+        
+        .cv {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .cv .left {
+            background: #2c3e50;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        
+        .cv .right {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Phần 4: Dự án nhỏ</h1>
+
+    <h2>16. Trang bán hàng điện thoại</h2>
+    <div class="products">
+        <div class="product-card">
+            <img src="https://didongviet.vn/dchannel/wp-content/uploads/2023/09/5-hinh-anh-iphone-15-pro-max-didongviet.jpg" alt="Điện thoại 1">
+            <h3>iPhone 15</h3>
+            <p>Giá: 25.000.000đ</p>
+            <button>Mua ngay</button>
+        </div>
+        <div class="product-card">
+            <img src="https://img.websosanh.vn/v2/users/root_product/images/dien-thoai-samsung-galaxy-s20/rs8m65vriptm0.jpg" alt="Điện thoại 2">
+            <h3>Samsung S24</h3>
+            <p>Giá: 22.000.000đ</p>
+            <button>Mua ngay</button>
+        </div>
+    </div>
+
+    <h2>17. Trang thông tin du lịch</h2>
+    <div class="travel">
+        <img src="https://img5.thuthuatphanmem.vn/uploads/2022/01/13/hinh-anh-thanh-pho-da-nang-ve-dem-dep_024513140.jpg" alt="Du lịch Đà Nẵng">
+        <div class="travel-info">
+            <h3>Đà Nẵng</h3>
+            <p>Thành phố biển xinh đẹp, nổi tiếng với cầu Rồng và bãi biển Mỹ Khê.</p>
+            <p>Bản đồ: 📍 Trung tâm Đà Nẵng</p>
+        </div>
+    </div>
+
+    <h2>18. Trang tin tức</h2>
+    <div class="news">
+        <h3>Công nghệ AI bùng nổ 2025</h3>
+        <img src="https://synnexfpt.com/wp-content/uploads/2025/01/5-AI-Advancements-to-Expect-in-the-Next-10-Years-scaled-1.jpeg" alt="Tin tức AI">
+        <p>AI ngày càng được ứng dụng rộng rãi trong đời sống và công việc.</p>
+    </div>
+
+    <h2>19. Trang lịch sự kiện</h2>
+    <ul class="events">
+        <li class="event-normal">25/08: Hội thảo công nghệ</li>
+        <li class="event-today">26/08: Ra mắt sản phẩm mới (Hôm nay)</li>
+        <li class="event-normal">27/08: Workshop kỹ năng</li>
+    </ul>
+
+    <h2>20. Tạo CV cá nhân</h2>
+    <div class="cv">
+        <div class="left">
+            <h3>Lê Tấn Kiệt</h3>
+            <p>Email: kietkietnek628@gmail.com</p>
+            <p>Điện thoại: 0328683064</p>
+        </div>
+        <div class="right">
+            <h3>Kỹ năng</h3>
+            <p>HTML, CSS, JavaScript</p>
+            <h3>Học vấn</h3>
+            <p>ĐH Công Nghiệp Thành Phố Hồ Chí Minh</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

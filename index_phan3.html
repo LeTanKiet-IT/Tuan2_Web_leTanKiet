@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phan3</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+            margin: 0;
+            align-items: center;
+        }
+        
+        h2 {
+            margin-top: 30px;
+            color: #333;
+        }
+        
+        form {
+            background: #fff;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        input,
+        textarea,
+        select,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        button {
+            background: #4CAF50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background: #45a049;
+        }
+        
+        .stars input {
+            display: none;
+        }
+        
+        .stars label {
+            font-size: 20px;
+            color: #ccc;
+            cursor: pointer;
+        }
+        
+        .stars input:checked~label,
+        .stars label:hover,
+        .stars label:hover~label {
+            color: gold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>11. Form đăng nhập</h2>
+    <form>
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>12. Form khảo sát ý kiến</h2>
+    <form>
+        <p>Chọn giới tính:</p>
+        <label><input type="radio" name="gender"> Nam</label><br>
+        <label><input type="radio" name="gender"> Nữ</label><br>
+        <p>Sở thích:</p>
+        <label><input type="checkbox"> Đá bóng</label><br>
+        <label><input type="checkbox"> Bóng chuyền</label><br>
+        <textarea rows="4" placeholder="Ý kiến thêm..."></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <h2>13. Form đặt bàn quán ăn</h2>
+    <form>
+        <label>Ngày đặt:</label>
+        <input type="date" required>
+        <label>Giờ:</label>
+        <input type="time" required>
+        <label>Số người:</label>
+        <input type="number" min="1" placeholder="Ví dụ: 4">
+        <textarea rows="3" placeholder="Yêu cầu thêm..."></textarea>
+        <button type="submit">Đặt bàn</button>
+    </form>
+
+    <h2>14. Form gửi phản hồi</h2>
+    <form>
+        <div class="stars">
+            <input type="radio" id="star5" name="rate"><label for="star5">★</label>
+            <input type="radio" id="star4" name="rate"><label for="star4">★</label>
+            <input type="radio" id="star3" name="rate"><label for="star3">★</label>
+            <input type="radio" id="star2" name="rate"><label for="star2">★</label>
+            <input type="radio" id="star1" name="rate"><label for="star1">★</label>
+        </div>
+        <textarea rows="4" placeholder="Nhập phản hồi..."></textarea>
+        <input type="email" placeholder="Email của bạn">
+        <button type="submit">Gửi phản hồi</button>
+    </form>
+
+    <h2>15. Form thanh toán đơn hàng</h2>
+    <form>
+        <input type="text" placeholder="Địa chỉ giao hàng" required>
+        <p>Phương thức thanh toán:</p>
+        <label><input type="radio" name="pay"> Tiền mặt</label><br>
+        <label><input type="radio" name="pay"> Thẻ tín dụng</label><br>
+        <label><input type="radio" name="pay"> Chuyển khoản</label><br>
+        <button type="submit">Thanh toán</button>
+    </form>
+
+</body>
+
+</html>
